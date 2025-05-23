@@ -1,0 +1,148 @@
+/* Reset básico para deixar tudo mais consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho (menu) */
+  header {
+    background-color: #0D4874;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo-observatorio {
+    height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Seções principais */
+  section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Estilo para seções com texto + imagem lado a lado */
+  .apresentacao,
+  .sobre,
+  .dados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Texto e imagem dividem o espaço igualmente */
+  .apresentacao-texto,
+  .sobre-texto,
+  .dados-texto,
+  .apresentacao-ilustracao,
+  .sobre-ilustracao,
+  .dados-imagem {
+    flex: 1 1 300px;
+    min-width: 280px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Botões */
+  .btn-dashboard {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0D4874;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn-dashboard:hover {
+    background-color: #093b5f;
+  }
+  
+  /* Repositório */
+  .repositorio-display {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .repositorio-display > div {
+    background-color: #fff;
+    border-left: 5px solid #0D4874;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #0D4874;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  footer h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-final {
+    background-color: #1A5179;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .icones-redes img {
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  /* Responsivo simples */
+  @media (max-width: 768px) {
+    .apresentacao,
+    .sobre,
+    .dados {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+  }
+  
